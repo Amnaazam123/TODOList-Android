@@ -32,7 +32,9 @@
                 android:id="@+id/AddButton"
                 android:layout_width="match_parent"
                 android:layout_height="69dp"
-                android:layout_margin="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="30dp"
                 android:text="Add"
                 android:textSize="24sp" />
 
@@ -40,7 +42,7 @@
                 android:id="@+id/myListView"
                 android:layout_width="383dp"
                 android:layout_height="419dp"
-                android:layout_margin="15dp" />
+                android:layout_margin="30dp" />
 
         </LinearLayout>
     </ScrollView>
