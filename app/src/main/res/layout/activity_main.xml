@@ -28,13 +28,14 @@
                 android:inputType="textPersonName"
                 android:textSize="20sp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/AddButton"
                 android:layout_width="match_parent"
                 android:layout_height="69dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="30dp"
+                android:background="@android:color/holo_orange_dark"
                 android:text="Add"
                 android:textSize="24sp" />
 
