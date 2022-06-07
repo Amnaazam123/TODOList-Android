@@ -24,7 +24,7 @@ public class AddRecordActivity extends AppCompatActivity {
     }
 
     public void AddRecord(View view) {
-        records.add("ALi2");
+        records.add("Arshiaa");
     }
 
 }
