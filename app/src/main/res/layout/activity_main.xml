@@ -6,46 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
+    <ListView
+        android:id="@+id/lw1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="76dp"
+        android:onClick="Add"
+        android:text="ADD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lw1" />
 
-            <EditText
-                android:id="@+id/task"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:layout_margin="30dp"
-                android:ems="10"
-                android:hint="Todo Task"
-                android:inputType="textPersonName"
-                android:textSize="20sp" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/AddButton"
-                android:layout_width="match_parent"
-                android:layout_height="69dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="30dp"
-                android:background="@android:color/holo_orange_dark"
-                android:text="Add"
-                android:textSize="24sp" />
-
-            <ListView
-                android:id="@+id/myListView"
-                android:layout_width="383dp"
-                android:layout_height="1044dp"
-                android:layout_margin="30dp" />
-
-        </LinearLayout>
-    </ScrollView>
+    <Button
+        android:id="@+id/del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="50dp"
+        android:text="Delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lw1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
